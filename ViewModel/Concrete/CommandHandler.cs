@@ -4,6 +4,11 @@ using ViewModel.Interfaces;
 
 namespace ViewModel.Concrete
 {
+    /// <summary>
+    /// Provides logic for command handling. 
+    /// </summary>
+    /// <owner>Aleksey Beletsky</owner>
+    /// <seealso cref="ICommand" />
     public class CommandHandler : ICommand
     {
         /// <summary>

@@ -1,10 +1,10 @@
-﻿using Model.Concrete;
-using Model.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Input;
+using Model.Concrete;
+using Model.Interfaces;
 using ViewModel.Interfaces;
 
 namespace ViewModel.Concrete
