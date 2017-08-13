@@ -11,9 +11,7 @@ namespace Model.Concrete
     /// </summary>
     /// <owner>Aleksey Beletsky</owner>
     /// <seealso cref="IQueue{T}" />
-    /// <seealso cref="IClearable" />
-    /// <seealso cref="ICountable" />
-    public sealed class QueueThroughArray<T> : IQueue<T>, IEnumerable<T>
+    public sealed class QueueThroughArray<T> : IQueue<T>
     {
         /// <summary>
         /// Holds the default length of the array for queue.
@@ -108,30 +106,6 @@ namespace Model.Concrete
             this.SetItem(item);
             this.tail++;
             this.Count++;
-        }
-
-        /// <summary>
-        /// Returns an enumerator that iterates through the collection.
-        /// </summary>
-        /// <owner>Aleksey Beletsky</owner>
-        /// <returns>
-        /// An enumerator that can be used to iterate through the collection.
-        /// </returns>
-        public IEnumerator<T> GetEnumerator()
-        {
-            return ((IEnumerable<T>)queue).GetEnumerator();
-        }
-
-        /// <summary>
-        /// Returns an enumerator that iterates through a collection.
-        /// </summary>
-        /// <owner>Aleksey Beletsky</owner>
-        /// <returns>
-        /// An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.
-        /// </returns>
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return ((IEnumerable<T>)queue).GetEnumerator();
         }
 
         /// <summary>

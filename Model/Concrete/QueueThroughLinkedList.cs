@@ -10,8 +10,6 @@ namespace Model.Concrete
     /// </summary>
     /// <owner>Aleksey Beletsky</owner>
     /// <seealso cref="IQueue{T}" />
-    /// <seealso cref="IClearable" />
-    /// <seealso cref="ICountable" />
     public class QueueThroughLinkedList<T> : IQueue<T>
     {
         /// <summary>
