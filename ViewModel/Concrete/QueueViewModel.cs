@@ -168,7 +168,7 @@ namespace ViewModel.Concrete
         {
             get
             {
-                return this.enqueue ?? (this.enqueue = new CommandHandler(this.Enqueue, this.viewService)); ;
+                return this.enqueue ?? (this.enqueue = new CommandHandler(this.Enqueue, this.viewService));
             }
         }
 
